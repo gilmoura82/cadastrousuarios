@@ -1,0 +1,12 @@
+
+html {
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:5%;
+}
+
+.tabelausuarios {
+	height:250px; 
+	overflow:scroll;
+}
+

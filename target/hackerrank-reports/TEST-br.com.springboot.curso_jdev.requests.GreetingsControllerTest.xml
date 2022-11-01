@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.springboot.curso_jdev.requests.GreetingsControllerTest" tests="3" failures="0" errors="0" skipped="0" time="3.330">
+  <testcase classname="br.com.springboot.curso_jdev.requests.GreetingsControllerTest" name="greetJava" time="3.319" />
+  <testcase classname="br.com.springboot.curso_jdev.requests.GreetingsControllerTest" name="greetSpring" time="0.005" />
+  <testcase classname="br.com.springboot.curso_jdev.requests.GreetingsControllerTest" name="greetRodJohnson" time="0.006" />
+</testsuite>
+

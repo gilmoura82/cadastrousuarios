@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="imagem/png" href="https://cdn-icons-png.flaticon.com/512/5203/5203200.png" />
+<title>Cadastro</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="validacao.js"></script>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+<h1>Cadastro de Usuários Com Springboot REST API</h1><br/>
+
+
+<form action="" id="cadastroUsuario">
+
+<!-- 
+<div class="mb-3">
+  <label for="id" class="form-label">ID</label>
+  <input type="text" class="form-control" readonly="readonly">
+</div>
+ -->
+
+<div class="mb-3">
+  <label for="nome" class="form-label">Nome</label>
+  <input type="text" class="form-control" id="nome" placeholder="Informe o Nome">
+</div>
+
+<div class="mb-3">
+  <label for="idade" class="form-label">Idade</label>
+  <input type="number" class="form-control" id="idade">
+</div>
+
+<button type="button" class="btn btn-success" onclick="salvarUsuario()">Salvar</button>
+<button type="button" class="btn btn-secondary" onclick="document.getElementById('cadastroUsuario').reset()">Novo</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPesquisaUsuario" >Pesquisar</button>
+
+
+</form>
+
+
+
+<div class="modal fade" id="modalPesquisaUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pesquisa de Usuário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameBusca" class="col-form-label">Informe O Nome:</label>
+            <input type="text" class="form-control" id="nameBusca"><br/>
+            <button type="button" class="btn btn-success" onclick="pesquisaUsuarios()">Pesquisar</button>
+          </div>
+        </form>
+		
+		<div class="tabelausuarios">
+			<table class="table" id="tabelaUsuarios">
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Nome</th>
+						<th scope="col">Ação</th>
+						<th scope="col">Ação</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
