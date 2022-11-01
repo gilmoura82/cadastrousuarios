@@ -11,4 +11,4 @@ Mini sistema criado com springboot REST API
   <li>Validação dos campos e chamada de demais funções com Javascript</li>
 </ul>
 
-<h3><a href="https://springboot-rest-api-app.herokuapp.com/springboot-rest-api-sample/index.html">Deploy</h3></a>
+<h3><a href="https://springboot-rest-api-app.herokuapp.com/springboot-rest-api-sample/index.html" target="_blank">Deploy</h3></a>
